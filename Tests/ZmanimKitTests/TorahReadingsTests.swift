@@ -224,4 +224,38 @@ final class TorahReadingsTests: XCTestCase {
         let first = schedule.first { $0.parasha != nil }!
         XCTAssertTrue(first.displayName.contains("Bereishit"))
     }
+
+    // MARK: - Daylight-saving changes
+
+    /// Shabbatot after a clock change must still resolve, in any time zone.
+    func testEveryShabbatResolvesAcrossDaylightSavingChanges() throws {
+        for identifier in ["Europe/Prague", "America/New_York", "Asia/Jerusalem", "Australia/Sydney"] {
+            let tz = try XCTUnwrap(TimeZone(identifier: identifier))
+            var cal = Calendar(identifier: .gregorian)
+            cal.timeZone = tz
+            // Shabbat 17 October 2026 (Noach) through a year of Shabbatot.
+            let start = gregorianDate(2026, 10, 17, tz: tz)
+            for week in 0..<52 {
+                let shabbat = try XCTUnwrap(cal.date(byAdding: .day, value: 7 * week, to: start))
+                XCTAssertNotNil(TorahReadings.reading(for: shabbat, timeZone: tz, israel: false),
+                                "\(identifier) week \(week)")
+            }
+        }
+    }
+
+    func testShabbatAfterTheEuropeanClockChange() {
+        // Clocks go back on 25 October 2026; 31 October is Vayera.
+        let prague = TimeZone(identifier: "Europe/Prague")!
+        let reading = TorahReadings.reading(for: gregorianDate(2026, 10, 31, tz: prague), timeZone: prague, israel: false)
+        XCTAssertEqual(reading?.parasha?.name, "Vayera")
+    }
+
+    func testIsraelShabbatOn23TishreiIsBereishit() {
+        // 5789: Rosh Hashanah Thursday 21 September 2028, so 23 Tishrei is Shabbat 14 October.
+        // In Israel Simchat Torah was the day before; the new cycle has begun.
+        let jerusalem = TimeZone(identifier: "Asia/Jerusalem")!
+        let reading = TorahReadings.reading(for: gregorianDate(2028, 10, 14, tz: jerusalem),
+                                            timeZone: jerusalem, israel: true)
+        XCTAssertEqual(reading?.parasha?.name, "Bereishit")
+    }
 }

@@ -248,9 +248,12 @@ public enum TorahReadings {
         let hd = HebrewDate(from: date, timeZone: timeZone)
         guard hd.weekday == 7 else { return nil }
 
-        let year = cycleYear(for: hd)
+        let year = cycleYear(for: hd, israel: israel)
         let schedule = annualSchedule(year: year, israel: israel, timeZone: timeZone)
-        return schedule.first { Calendar(identifier: .gregorian).isDate($0.date, inSameDayAs: date) }
+        // Compare days in the requested time zone, not the device's.
+        var gregorian = Calendar(identifier: .gregorian)
+        gregorian.timeZone = timeZone
+        return schedule.first { gregorian.isDate($0.date, inSameDayAs: date) }
     }
 
     /// Generate the full annual parasha schedule for a Hebrew year.
@@ -272,11 +275,16 @@ public enum TorahReadings {
 
         let shabbatBereishit = nextShabbat(after: simchatTorah, timeZone: timeZone)
 
+        // Step by calendar weeks: a fixed 7×24 hours drifts an hour off midnight
+        // after a daylight-saving change, and the day lookups then miss.
+        var gregorian = Calendar(identifier: .gregorian)
+        gregorian.timeZone = timeZone
         var shabbatot: [Date] = []
         var current = shabbatBereishit
         while current < nextSimchatTorah {
             shabbatot.append(current)
-            current = current.addingTimeInterval(7 * 86400)
+            guard let next = gregorian.date(byAdding: .day, value: 7, to: current) else { break }
+            current = next
         }
 
         let holidayMap = buildHolidayMap(
@@ -323,12 +331,11 @@ public enum TorahReadings {
     }
 
     /// Which Hebrew year's reading cycle a given Hebrew date falls in.
-    private static func cycleYear(for hd: HebrewDate) -> Int {
-        if hd.month == 1 && hd.day <= (hd.isLeapYear ? 23 : 23) {
-            let isIsrael = false
-            let simchatDay = isIsrael ? 22 : 23
-            if hd.day <= simchatDay { return hd.year - 1 }
-        }
+    /// The cycle a date belongs to: until Simchat Torah (22 Tishrei in Israel,
+    /// 23 in the Diaspora) it is still the previous year's.
+    private static func cycleYear(for hd: HebrewDate, israel: Bool) -> Int {
+        let simchatTorahDay = israel ? 22 : 23
+        if hd.month == 1 && hd.day <= simchatTorahDay { return hd.year - 1 }
         return hd.year
     }
 

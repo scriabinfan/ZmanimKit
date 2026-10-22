@@ -1,0 +1,49 @@
+{
+  "" : {
+    "diagnostics" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/ZmanimKit-primary.dia",
+    "emit-module-dependencies" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/ZmanimKit-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/ZmanimKit-primary-emit-module.dia",
+    "pch" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/ZmanimKit-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/ZmanimKit-primary.swiftdeps"
+  },
+  "/Users/andre/Documents/ZmanimKit/Sources/ZmanimKit/HebrewCalendar.swift" : {
+    "const-values" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/HebrewCalendar.swiftconstvalues",
+    "dependencies" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/HebrewCalendar.d",
+    "diagnostics" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/HebrewCalendar.dia",
+    "index-unit-output-path" : "/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/HebrewCalendar.o",
+    "llvm-bc" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/HebrewCalendar.bc",
+    "object" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/HebrewCalendar.o",
+    "swift-dependencies" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/HebrewCalendar.swiftdeps",
+    "swiftmodule" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/HebrewCalendar~partial.swiftmodule"
+  },
+  "/Users/andre/Documents/ZmanimKit/Sources/ZmanimKit/JewishCalendar.swift" : {
+    "const-values" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/JewishCalendar.swiftconstvalues",
+    "dependencies" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/JewishCalendar.d",
+    "diagnostics" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/JewishCalendar.dia",
+    "index-unit-output-path" : "/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/JewishCalendar.o",
+    "llvm-bc" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/JewishCalendar.bc",
+    "object" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/JewishCalendar.o",
+    "swift-dependencies" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/JewishCalendar.swiftdeps",
+    "swiftmodule" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/JewishCalendar~partial.swiftmodule"
+  },
+  "/Users/andre/Documents/ZmanimKit/Sources/ZmanimKit/SolarCalculator.swift" : {
+    "const-values" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/SolarCalculator.swiftconstvalues",
+    "dependencies" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/SolarCalculator.d",
+    "diagnostics" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/SolarCalculator.dia",
+    "index-unit-output-path" : "/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/SolarCalculator.o",
+    "llvm-bc" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/SolarCalculator.bc",
+    "object" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/SolarCalculator.o",
+    "swift-dependencies" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/SolarCalculator.swiftdeps",
+    "swiftmodule" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/SolarCalculator~partial.swiftmodule"
+  },
+  "/Users/andre/Documents/ZmanimKit/Sources/ZmanimKit/ZmanimCalculator.swift" : {
+    "const-values" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/ZmanimCalculator.swiftconstvalues",
+    "dependencies" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/ZmanimCalculator.d",
+    "diagnostics" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/ZmanimCalculator.dia",
+    "index-unit-output-path" : "/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/ZmanimCalculator.o",
+    "llvm-bc" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/ZmanimCalculator.bc",
+    "object" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/ZmanimCalculator.o",
+    "swift-dependencies" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/ZmanimCalculator.swiftdeps",
+    "swiftmodule" : "/Users/andre/Documents/ZmanimKit/.build/out/Intermediates.noindex/ZmanimKit.build/Debug/ZmanimKit-t.build/Objects-normal/arm64/ZmanimCalculator~partial.swiftmodule"
+  }
+}

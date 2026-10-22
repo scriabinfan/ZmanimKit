@@ -1,4 +1,0 @@
-module ZmanimKit {
-header "ZmanimKit-Swift.h"
-export *
-}

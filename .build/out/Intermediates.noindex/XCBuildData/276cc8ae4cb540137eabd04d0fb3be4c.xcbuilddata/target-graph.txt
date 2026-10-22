@@ -1,7 +1,0 @@
-Target dependency graph (3 targets)
-Target 'AllExcludingTests' in project 'Aggregate'
-➜ Explicit dependency on target 'ZmanimKit-product' in project 'ZmanimKit'
-➜ Explicit dependency on target 'ZmanimKit' in project 'ZmanimKit'
-Target 'ZmanimKit-product' in project 'ZmanimKit'
-➜ Explicit dependency on target 'ZmanimKit' in project 'ZmanimKit'
-Target 'ZmanimKit' in project 'ZmanimKit' (no dependencies)
